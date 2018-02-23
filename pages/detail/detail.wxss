@@ -1,0 +1,42 @@
+/* pages/detail/detail.wxss */
+page {
+  height:100%;
+  top:0;
+  position:absolute;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin:20rpx 15rpx; 
+  overflow-x: hidden;
+  position:relative;
+}
+
+textarea {
+  background-color: #EEC591;
+  border-radius: 10rpx;
+  color:white;
+  font-size:35rpx;
+  padding:10rpx;
+  width:700rpx;  
+}
+
+.btnGroup {
+  width:700rpx;
+  height:100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+  margin-top:30rpx;
+}
+
+.btnGroup .btn {
+  background-color: #EEC591;
+  border-radius: 10rpx;
+  color:white;
+  height:100rpx;
+  width:200rpx;
+}

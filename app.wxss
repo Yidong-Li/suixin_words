@@ -1,0 +1,7 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  top:0;
+  position: absolute;
+  /* padding: 20rpx 15rpx; */
+} 

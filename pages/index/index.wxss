@@ -1,0 +1,173 @@
+/**index.wxss**/
+page {
+  height:100%;
+  top:0;
+  position:absolute;
+}
+
+ .words {
+    border-radius: 10rpx;
+    width:700rpx;
+    height:20%;
+    position:relative;
+    margin-top: 50rpx;
+    padding:10rpx;
+    font-size:30rpx;
+    color:white;
+    margin: 20rpx 15rpx;
+ }
+
+ .words .words_hidden {
+    /* height:160rpx; */
+    overflow: hidden;
+    /* white-space: nowrap; */
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:4;
+    margin-top:-30rpx; 
+ }
+
+ .words:nth-child(1) {
+   margin-top:0;
+ }
+
+ .words:nth-child(4n+1) {
+   background-color: #EEC591;
+ }
+
+ .words:nth-child(4n+2) {
+   background-color: #FFAEB9;
+ }
+
+ .words:nth-child(4n+3) {
+  background-color: #9BCD9B;
+ }
+
+ .words:nth-child(4n+4) {
+  background-color: #ADD8E6;
+ }
+
+ .words .floatLayer {
+   background-color: rgba(0,0,0,0.3);
+   overflow-x: hidden;
+   width:100%;
+   height:60rpx;
+   position:absolute;
+   bottom:0;
+   left:0;
+   border-radius: 0 0 10rpx 10rpx;
+   display: flex;
+   align-items: center;
+ }
+
+ .words .floatLayer .time{
+   padding-left:20rpx;
+ }
+
+.words .floatLayer .btns {
+  width:100rpx;
+  height:60rpx;
+  position: absolute;
+  right:10rpx;
+  font-size:30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.words .floatLayer .btns .delete {
+  position:relative;
+  margin-left: 20rpx;
+}
+
+.noWords {
+  /* height:100%; */
+  margin:200rpx 200rpx; 
+  position:relative;
+  color:gray;
+}
+
+.noWords p {
+  display: block;
+}
+
+ .add {
+   width:100rpx;
+   height:100rpx;
+   bottom:20rpx;
+   left:20rpx;
+   position:fixed;
+ }
+
+ .add button {
+   width:100rpx;
+   height:100rpx;
+   border-radius: 50rpx;
+   background-color: #F08080;
+ }
+
+ .add button .row {
+    background-color: white;
+    width:70rpx;
+    height:10rpx;
+    border-radius: 10rpx;
+    position:fixed;
+    bottom:65rpx;
+    left:35rpx;
+ }
+
+ .add button .column {
+   background-color:white;
+   height:70rpx;
+   width:10rpx;
+   border-radius: 10rpx;
+   position:fixed;
+   left:65rpx;
+   bottom:35rpx;
+ } 
+
+/* .add button .circle-lefttop {
+  width: 40rpx; 
+  height: 0px;
+  border:0 solid transparent;
+  border-top:40rpx solid transparent;  
+  border-radius:40rpx 0 0 0;
+  position:absolute;
+  top:0; 
+  left:0;
+}
+
+.add button .circle-righttop {
+  width: 40rpx; 
+  height: 0px;
+  border:0 solid transparent;
+  border-top:40rpx solid transparent;  
+  border-radius:0 40rpx 0 0;
+  position:absolute;
+  top:0; 
+  right:0;
+}
+
+.add button .circle-rightbottom {
+  width: 40rpx; 
+  height: 0px;
+  border:0 solid transparent;
+  border-top:40rpx solid white;  
+  border-radius:0 0 40rpx 0;
+  position:absolute;
+  bottom:0; 
+  right:0;
+}
+
+.add button .circle-leftbottom {
+  width: 40rpx; 
+  height: 0px;
+  border:0 solid transparent;
+  border-top:40rpx solid transparent;  
+  border-radius:0 0 0 40rpx;
+  position:absolute;
+  bottom:0; 
+  left:0;
+} */

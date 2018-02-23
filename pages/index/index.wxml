@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container"> 
+  <block wx:if="{{ words_list }}">
+    <view class="words" wx:for="{{ words_list }}" bindtap="detail" data-idx="{{ index }}">
+      <text class="words_hidden">
+        {{ item.words }}
+      </text>
+      <view class="floatLayer" catchtap="nothing">
+        <view class="time">{{ item.date }}</view>
+        <view class="btns">
+          <view class="delete" catchtap="deleteWords" data-idx="{{ index }}">删除</view>
+        </view>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="noWords">  
+      还没有内容哦～
+      <p>点击左下角的按钮进行添加吧！</p>
+    </view>   
+  </block>
+  <view class="add">
+    <button bindtap='addWords'>
+      <view class="row"></view>
+      <view class="column"></view>
+    </button>
+  </view>
+</view> 
